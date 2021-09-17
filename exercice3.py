@@ -15,7 +15,7 @@ def decomposer(secondes):
 
     # TODO: Assigner à la variable "minute" le nombre de minutes restantes
     minutes = (secondes - (annees * 31536000 + semaines * 604800 + jours * 86400 + heures * 3600)) // 60
-
+ 
     # TODO: Assigner à la variable "secondes" le nombre de secondes restantes
     secondes = secondes - (annees * 31536000 + semaines * 604800 + jours * 86400 + heures * 3600 + minutes * 60)
 

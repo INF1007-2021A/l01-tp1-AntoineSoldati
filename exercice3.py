@@ -3,7 +3,6 @@ def decomposer(secondes):
 
     # TODO: Assigner à la variable "annees" le nombre d'années
     annees = secondes // 31536000
-
     # TODO: Assigner à la variable "semaines" le nombre de semaines restantes
     semaines = (secondes - annees*31536000) // 604800
 

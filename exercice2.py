@@ -3,41 +3,42 @@ import math
 
 def resoudreEquation(a, b, c):
     # TODO: Calculer le discriminant et assigner la valeur dans la variable "delta"
-    delta =
+    delta = b**2 - 4*a*c
 
     # TODO: Déterminer la condition (bool) qui correspond à aucune solution de l'équation et mettre la valeur dans la variable "naPasDeSolution"
-    naPasDeSolution =
+    naPasDeSolution = bool(delta<0)
 
     if naPasDeSolution:
         # ces ligne de code seront executé si il y'a aucune racine
         # TODO: afficher sur l'écran "Aucune racine"
+        print("Aucune racine")
 
         # ne pas modifier
         return None
 
     # TODO: Déterminer la condition (bool) qui correspond à une unique solution de l'équation et mettre la valeur dans "aUneSeuleSolution"
-    aUneSeuleSolution =
+    aUneSeuleSolution = bool(delta == 0)
 
     if aUneSeuleSolution:
         # ces ligne de code seront executé si il y'a une seule racine
         # TODO: afficher sur l'écran "Une seule racine"
-
+        print("Une seule racine")
         # TODO: assigner a la variable x1 la valeur de la racine
-        x1 =
+        x1 = delta**(1/2)
         # ne pas modifier
         return x1
 
     # TODO: Déterminer la condition (bool) qui correspond à deux solutions de l'équation et mettre la valeur dans "aDeuxSolutions"
-    aDeuxSolutions =
+    aDeuxSolutions = bool(delta>0)
 
     if aDeuxSolutions:
         # TODO: afficher sur l'écran "Deux racines"
-
-        # TODO: calculer la prmiere racine, assigner la a "x1"
-        x1 =
+        print("Deux racines")
+        # TODO: calculer la premiere racine, assigner la a "x1"
+        x1 = delta ** (1/2)
 
         # TODO: calculer la deuxieme racine, assigner la a "x2"
-        x2 =
+        x2 = -1 * delta ** (1/2)
 
         # ne pas modifier cette ligne
         return x1, x2
